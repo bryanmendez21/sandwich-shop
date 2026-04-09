@@ -33,7 +33,7 @@ public class sandwich_shop {
                 System.out.println("price is: " + regular);
             }
         }
-        else{
+        else if (size_chosen == 2){
             // Large logic
             if (age <= 17){
                 double price_17and_younger = large * .90;
@@ -47,6 +47,9 @@ public class sandwich_shop {
             else{
                 System.out.println("price is: " + large);
             }
+        }
+        else{
+            System.out.println("Choose between 1 and 2");
         }
 
 

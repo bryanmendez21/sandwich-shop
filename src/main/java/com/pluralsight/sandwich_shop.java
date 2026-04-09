@@ -32,28 +32,30 @@ public class sandwich_shop {
                 discount = 0.80;
             }
 
+
             // Logic
             if (size_chosen == 1) {
                 // Regular logic
-                base_price = regular;
-
-
-                if (loaded.equalsIgnoreCase("yes")){
-                    base_price += loaded_price_regular;
-                }
+                base_price += regular;
 
                 double final_price = base_price * discount;
+                if (loaded.equalsIgnoreCase("yes")){
+                    final_price += loaded_price_regular;
+                }
+
+
                 System.out.printf("Price is: %.2f" ,final_price);
             }
             else if (size_chosen == 2) {
                 // Large logic
-                base_price = large;
-
-                if (loaded.equalsIgnoreCase("yes")){
-                    base_price += loaded_price_large;
-                }
+                base_price += large;
 
                 double final_price = base_price * discount;
+                if (loaded.equalsIgnoreCase("yes")){
+                    final_price += loaded_price_large;
+                }
+
+
                 System.out.printf("Price is: %.2f" ,final_price);
             }
 
